@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Soumyadip Jana — Machine Learning Engineer</title>
+<meta name="description" content="Soumyadip Jana — Machine Learning Engineer & AI Enthusiast. B.Tech CSE (AI & ML) student building intelligent applications with Python, Deep Learning, Computer Vision and NLP." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- cursor glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">SJ<span class="logo-dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle light and dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button id="navBurger" class="icon-btn burger" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <canvas id="neuralCanvas"></canvas>
+  <div class="hero-inner">
+    <p class="eyebrow fade-up">👋 Hello World, I'm</p>
+    <h1 class="hero-title fade-up" style="animation-delay:.05s">Soumyadip Jana</h1>
+    <p class="hero-role fade-up" style="animation-delay:.1s">
+      <span class="typing" id="typing"></span><span class="cursor-blink">|</span>
+    </p>
+    <p class="hero-sub fade-up" style="animation-delay:.15s">
+      B.Tech CSE (AI &amp; ML) student @ The Neotia University — building intelligent
+      systems with Machine Learning, Deep Learning, Computer Vision &amp; NLP.
+    </p>
+    <div class="hero-cta fade-up" style="animation-delay:.2s">
+      <a href="#projects" class="btn btn-primary">Explore My Work <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="resume.pdf" download class="btn btn-ghost"><i class="fa-solid fa-download"></i> Download Resume</a>
+    </div>
+    <div class="hero-socials fade-up" style="animation-delay:.25s">
+      <a href="https://github.com/soumyadipjana18" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/soumyadip-jana-9bba23383" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:soumyadipjana917@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+  <a href="#stats" class="scroll-cue" aria-label="Scroll down">Scroll <i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats" id="stats">
+  <div class="stats-inner">
+    <div class="stat fade-up">
+      <span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span>
+      <p>Projects</p>
+    </div>
+    <div class="stat fade-up">
+      <span class="stat-num" data-count="40">0</span><span class="stat-plus">+</span>
+      <p>Technologies</p>
+    </div>
+    <div class="stat fade-up">
+      <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
+      <p>Certifications</p>
+    </div>
+    <div class="stat fade-up">
+      <span class="stat-num" data-count="1">0</span><span class="stat-plus">st</span>
+      <p>Year, Big Goals</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="section-head fade-up">
+    <span class="eyebrow">01 · About</span>
+    <h2>The person behind the models</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-photo fade-up">
+      <div class="photo-frame">
+        <img src="assets/profile.jpeg" alt="Portrait of Soumyadip Jana" />
+      </div>
+      <div class="photo-badge"><i class="fa-solid fa-brain"></i> AI &amp; ML</div>
+    </div>
+    <div class="about-text fade-up">
+      <p>
+        I'm <strong>Soumyadip Jana</strong>, a B.Tech CSE (AI &amp; Machine Learning) student
+        at <strong>The Neotia University</strong>. I'm drawn to problems where data has a story
+        to tell — and I build the models that tell it.
+      </p>
+      <p>
+        From classical Machine Learning to Deep Learning, Computer Vision and NLP, I enjoy
+        the full pipeline: cleaning messy data, engineering features, training models, and
+        shipping them as real, usable applications. I'm constantly learning, building
+        impactful projects, and sharpening my craft toward becoming a skilled AI engineer.
+      </p>
+      <div class="about-tags">
+        <span><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE (AI &amp; ML)</span>
+        <span><i class="fa-solid fa-location-dot"></i> The Neotia University</span>
+        <span><i class="fa-solid fa-bolt"></i> Open to Internships</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="skills" id="skills">
+  <div class="section-head fade-up">
+    <span class="eyebrow">02 · Skills</span>
+    <h2>Technical Skills</h2>
+    <p class="section-sub">Tools and concepts I use to take an idea from raw data to a deployed product.</p>
+  </div>
+
+  <div class="skills-grid" id="skillsGrid">
+    <!-- injected by script.js -->
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="projects" id="projects">
+  <div class="section-head fade-up">
+    <span class="eyebrow">03 · Projects</span>
+    <h2>Featured Projects</h2>
+    <p class="section-sub">A few things I've built while learning to ship AI end-to-end. Swap these for your own — see the README for instructions.</p>
+  </div>
+
+  <div class="project-filters fade-up" id="projectFilters">
+    <button class="filter-chip active" data-filter="all">All</button>
+    <button class="filter-chip" data-filter="ml">Machine Learning</button>
+    <button class="filter-chip" data-filter="dl">Deep Learning</button>
+    <button class="filter-chip" data-filter="cv">Computer Vision</button>
+    <button class="filter-chip" data-filter="nlp">NLP</button>
+  </div>
+
+  <div class="project-grid" id="projectGrid">
+
+    <article class="project-card fade-up" data-tags="ml">
+      <div class="project-top">
+        <span class="project-icon">🏠</span>
+        <a href="#" class="project-link" aria-label="Open repository"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <h3>House Price Prediction</h3>
+      <ul class="project-points">
+        <li><i class="fa-solid fa-check"></i> Random Forest Regressor</li>
+        <li><i class="fa-solid fa-check"></i> 95% R² accuracy</li>
+        <li><i class="fa-solid fa-check"></i> Deployed with Streamlit</li>
+      </ul>
+      <div class="project-stack">
+        <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+      </div>
+    </article>
+
+    <article class="project-card fade-up" data-tags="cv dl">
+      <div class="project-top">
+        <span class="project-icon">🧿</span>
+        <a href="#" class="project-link" aria-label="Open repository"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <h3>Real-Time Face Detection</h3>
+      <ul class="project-points">
+        <li><i class="fa-solid fa-check"></i> OpenCV + Haar Cascades</li>
+        <li><i class="fa-solid fa-check"></i> Live webcam inference</li>
+        <li><i class="fa-solid fa-check"></i> 30+ FPS on CPU</li>
+      </ul>
+      <div class="project-stack">
+        <span>Python</span><span>OpenCV</span><span>NumPy</span>
+      </div>
+    </article>
+
+    <article class="project-card fade-up" data-tags="dl cv">
+      <div class="project-top">
+        <span class="project-icon">🖼️</span>
+        <a href="#" class="project-link" aria-label="Open repository"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <h3>Image Classifier (CNN)</h3>
+      <ul class="project-points">
+        <li><i class="fa-solid fa-check"></i> Custom CNN architecture</li>
+        <li><i class="fa-solid fa-check"></i> Trained on CIFAR-10</li>
+        <li><i class="fa-solid fa-check"></i> ~90% test accuracy</li>
+      </ul>
+      <div class="project-stack">
+        <span>TensorFlow</span><span>Keras</span><span>Python</span>
+      </div>
+    </article>
+
+    <article class="project-card fade-up" data-tags="nlp">
+      <div class="project-top">
+        <span class="project-icon">💬</span>
+        <a href="#" class="project-link" aria-label="Open repository"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <h3>Sentiment Analysis Engine</h3>
+      <ul class="project-points">
+        <li><i class="fa-solid fa-check"></i> Hugging Face Transformers</li>
+        <li><i class="fa-solid fa-check"></i> Tweet &amp; review classification</li>
+        <li><i class="fa-solid fa-check"></i> REST API with Flask</li>
+      </ul>
+      <div class="project-stack">
+        <span>Transformers</span><span>NLTK</span><span>Flask</span>
+      </div>
+    </article>
+
+    <article class="project-card fade-up" data-tags="cv">
+      <div class="project-top">
+        <span class="project-icon">🎯</span>
+        <a href="#" class="project-link" aria-label="Open repository"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <h3>Object Detection with YOLO</h3>
+      <ul class="project-points">
+        <li><i class="fa-solid fa-check"></i> YOLOv8 fine-tuning</li>
+        <li><i class="fa-solid fa-check"></i> Custom dataset annotation</li>
+        <li><i class="fa-solid fa-check"></i> Real-time video inference</li>
+      </ul>
+      <div class="project-stack">
+        <span>YOLO</span><span>PyTorch</span><span>OpenCV</span>
+      </div>
+    </article>
+
+    <article class="project-card fade-up" data-tags="ml">
+      <div class="project-top">
+        <span class="project-icon">📊</span>
+        <a href="#" class="project-link" aria-label="Open repository"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <h3>Customer Churn Prediction</h3>
+      <ul class="project-points">
+        <li><i class="fa-solid fa-check"></i> EDA + Feature Engineering</li>
+        <li><i class="fa-solid fa-check"></i> XGBoost classifier</li>
+        <li><i class="fa-solid fa-check"></i> Deployed on Vercel</li>
+      </ul>
+      <div class="project-stack">
+        <span>Pandas</span><span>Scikit-learn</span><span>Plotly</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section class="education" id="education">
+  <div class="section-head fade-up">
+    <span class="eyebrow">04 · Journey</span>
+    <h2>Education</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item fade-up">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <h3>B.Tech, CSE (AI &amp; Machine Learning)</h3>
+        <p class="timeline-org">The Neotia University</p>
+        <p class="timeline-desc">Building a strong foundation in Machine Learning, Deep Learning, Computer Vision, NLP and Data Science through coursework and hands-on projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info fade-up">
+      <span class="eyebrow">05 · Contact</span>
+      <h2>Let's build something amazing together.</h2>
+      <p>Have a project, an internship opportunity, or just want to talk about AI? My inbox is always open.</p>
+      <div class="contact-list">
+        <a href="mailto:soumyadipjana917@gmail.com" class="contact-row">
+          <i class="fa-solid fa-envelope"></i> soumyadipjana917@gmail.com
+        </a>
+        <a href="tel:+919002513927" class="contact-row">
+          <i class="fa-solid fa-phone"></i> +91 90025 13927
+        </a>
+        <a href="https://github.com/soumyadipjana18" target="_blank" rel="noopener" class="contact-row">
+          <i class="fa-brands fa-github"></i> github.com/soumyadipjana18
+        </a>
+        <a href="https://www.linkedin.com/in/soumyadip-jana-9bba23383" target="_blank" rel="noopener" class="contact-row">
+          <i class="fa-brands fa-linkedin"></i> linkedin.com/in/soumyadip-jana
+        </a>
+      </div>
+    </div>
+    <form class="contact-form fade-up" id="contactForm">
+      <label>
+        Name
+        <input type="text" name="name" placeholder="Your name" required />
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" placeholder="you@example.com" required />
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="4" placeholder="Tell me about your project or opportunity..." required></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary full-width">
+        Send Message <i class="fa-solid fa-paper-plane"></i>
+      </button>
+      <p class="form-note" id="formNote">This form uses EmailJS — add your keys in script.js to activate it.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Designed &amp; built by Soumyadip Jana</p>
+  <div class="footer-socials">
+    <a href="https://github.com/soumyadipjana18" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/soumyadip-jana-9bba23383" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="mailto:soumyadipjana917@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> Soumyadip Jana. All rights reserved.</p>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
