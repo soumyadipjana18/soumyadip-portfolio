@@ -361,6 +361,34 @@ html[data-theme="light"] .nav.scrolled{ background: rgba(255,255,255,0.75); }
 .timeline-org{ color: var(--secondary); font-size:.92rem; font-weight:600; margin-bottom:.7rem; }
 .timeline-desc{ color: var(--text-dim); line-height:1.7; font-size:.95rem; }
 
+/* ============ HACKATHONS ============ */
+.hackathons{ padding: 6rem 1.5rem; background: var(--bg-soft); }
+.hackathon-grid{
+  max-width: var(--maxw); margin:0 auto;
+  display:grid; grid-template-columns: repeat(2, 1fr); gap:1.6rem;
+}
+.hackathon-card{
+  background: var(--card); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 2rem; text-align:center;
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.hackathon-card:hover{ transform: translateY(-6px); box-shadow: var(--shadow); border-color: var(--accent); }
+.hackathon-icon{
+  font-size: 2.6rem; margin-bottom: .9rem;
+  width: 76px; height:76px; line-height:76px; border-radius:50%;
+  background: var(--card-hi); margin-left:auto; margin-right:auto;
+}
+.hackathon-card h3{ font-size: 1.2rem; margin-bottom:.3rem; }
+.hackathon-org{ color: var(--secondary); font-size:.88rem; font-weight:600; margin-bottom: .9rem; }
+.hackathon-desc{ color: var(--text-dim); font-size:.92rem; line-height:1.7; margin-bottom: 1.2rem; }
+.hackathon-tags{ display:flex; flex-wrap:wrap; justify-content:center; gap:.5rem; }
+.hackathon-tags span{
+  font-size:.78rem; padding:.32rem .75rem; border-radius:999px;
+  background: var(--card-hi); color: var(--text-dim); border:1px solid var(--border);
+}
+
+@media (max-width:700px){ .hackathon-grid{ grid-template-columns: 1fr; } }
+
 /* ============ CONTACT ============ */
 .contact{ padding: 6rem 1.5rem; }
 .contact-grid{
